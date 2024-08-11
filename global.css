@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Talk';
+    src: url('public/ZTTalk-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+lake {
+    font-family: 'Talk', sans-serif;
+}

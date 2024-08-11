@@ -1,0 +1,73 @@
+package components
+
+templ Form() {
+	@Layout() {
+		<div class="max-w-sm p-10 md:p-10 border-gray-100 border-2 shadow rounded-xl m-12">
+			<h3 class="p-0 m-0 text-4xl font-medium">New Job</h3>
+			<p class="">Add a job to track.</p>
+			<p class="text-xs text-gray-400 "><span class="font-semibold">(Optional)</span> Adding an end date allows to view the jobs in a calendar view</p>
+			<form class="not-prose w-full">
+				<div class="grid grid-rows-1 md:grid-rows-3 grid-flow-row md:grid-flow-row gap-2 text-md">
+					<div class="flex flex-col">
+						<input
+							type="text"
+							name="jobName"
+							id="jobName"
+							autocomplete="off"
+							placeholder="Job name"
+							class="max-w-md border-none rounded-sm text-gray-300 border-gray-300 shadow-sm"
+						/>
+					</div>
+					<div class="flex flex-col">
+						<input
+							type="text"
+							name="companyName"
+							id="companyName"
+							autocomplete="off"
+							placeholder="Company name"
+							class="max-w-md border-none rounded-sm text-gray-300 border-gray-300 shadow-sm"
+						/>
+					</div>
+					<div class="flex flex-col">
+						<input
+							type="text"
+							name="salary"
+							id="salary"
+							autocomplete="off"
+							placeholder="Salary"
+							class="max-w-md border-none rounded-sm text-gray-300 border-gray-300 shadow-sm"
+						/>
+					</div>
+					<div class="flex flex-col">
+						<input
+							type="text"
+							name="jobLink"
+							id="jobLink"
+							autocomplete="off"
+							placeholder="Job link"
+							class="max-w-md border-none rounded-sm text-gray-300 border-gray-300 shadow-sm"
+						/>
+					</div>
+					<div class="flex flex-col">
+						<input
+							type="text"
+							name="closingDate"
+							id="closingDate"
+							autocomplete="off"
+							placeholder="Closing date"
+							class="max-w-md border-none rounded-sm text-gray-300 border-gray-300 shadow-sm"
+						/>
+					</div>
+				</div>
+				<div class="flex flex-col pt-5">
+					<div class="text-xs  w-fit max-w-xs p-2 grid grid-col-4 grid-flow-col gap-1 rounded-sm shadow-sm">
+						<button class="hover:bg-gray-100 w-full h-full p-1.5 rounded-md m-0">Interviewing</button>
+						<button class="hover:bg-gray-100 w-full h-full p-1.5 rounded-md m-0">Offer</button>
+						<button class="hover:bg-gray-100 w-full h-full p-1.5 rounded-md m-0">Rejected</button>
+						<button class="hover:bg-gray-100 w-full h-full p-1.5 rounded-md m-0">Deadend</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	}
+}

@@ -1,0 +1,41 @@
+package components
+
+templ Layout() {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Try me!</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="description" content="Why you wanna try me!"/>
+			<script src="https://unpkg.com/htmx.org@2.0.1/dist/htmx.js" integrity="sha384-gpIh5aLQ0qmX8kZdyhsd6jA24uKLkqIr1WAGtantR4KsS97l/NRBvh8/8OYGThAf" crossorigin="anonymous"></script>
+			<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+			<script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                backgroundImage: {
+                        hero: "url('hero.jpg')",
+                      },
+                },
+            },
+            }
+            </script>
+			<link rel="stylesheet" href="global.css"/>
+			<link rel="preconnect" href="https://fonts.googleapis.com"/>
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+			<link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet"/>
+			<style>
+                body {
+                    font-family: "Space Grotesk", sans-serif;
+                }
+            </style>
+		</head>
+		<body>
+			@NavBar() {
+				<div class="prose max-w-none">
+					{ children... }
+				</div>
+			}
+		</body>
+	</html>
+}

@@ -1,0 +1,27 @@
+package components
+
+templ Counter() {
+	@Layout() {
+		<div class="shadow p-10 mt-10 rounded-xl border-2 max-w-lg">
+			<div class="flex items-center justify-center text-xl">Statistics</div>
+			<div class="grid grid-cols-4 justify-items-center grid-flow-col gap-4">
+				<div>
+					<p class="flex items-center text-lg font-light justify-center">Interviews</p>
+					<div class="w-16 h-16 shadow bg-gray-200 flex justify-center font-bold items-center text-2xl rounded-full">3</div>
+				</div>
+				<div>
+					<p class="flex items-center text-lg font-light justify-center">Offers</p>
+					<div class="w-16 h-16 shadow bg-gray-200 flex justify-center font-bold items-center text-2xl rounded-full">10</div>
+				</div>
+				<div>
+					<p class="flex items-center text-lg font-light justify-center">Rejections</p>
+					<div class="w-16 h-16 shadow bg-gray-200 flex justify-center font-bold items-center text-2xl rounded-full">0</div>
+				</div>
+				<div>
+					<p class="flex items-center text-lg font-light justify-center">Dead end</p>
+					<div class="w-16 h-16 shadow bg-gray-200 flex justify-center font-bold items-center text-2xl rounded-full">0</div>
+				</div>
+			</div>
+		</div>
+	}
+}
